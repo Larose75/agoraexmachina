@@ -1,0 +1,32 @@
+*****************************************************************************
+**** Gestion des moddate - checksum - tstamp ********************************
+Dans la gestion SQL, il faut prendre en compte les chaps moddate, checksum et 
+tstamp
+--> Cible V1.0
+*****************************************************************************
+
+
+
+*****************************************************************************
+**** sécurité ***************************************************************
+Renforcer la sécurité dans l'application : Seul l'utilisateur ou un admin 
+peut modifier un élement. (instance, proposition, commentaire...)
+Idem pour les fiches utilisateurs
+--> Cible V1.4
+*****************************************************************************
+
+
+*****************************************************************************
+**** Sécurisation de l'admin ************************************************
+Seul un admin doit pouvoir accéder à l'admin et à ses pages... C'est simple
+--> Cible V1.4
+*****************************************************************************
+
+
+*****************************************************************************
+**** Homogéniser les URL ****************************************************
+Il faut homogéniser les URLS dans le fichier routing.yml
+--> Cible V1.4
+*****************************************************************************
+
+

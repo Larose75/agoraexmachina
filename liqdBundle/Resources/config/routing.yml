@@ -1,0 +1,109 @@
+cuppLiqdBundle_homepage:
+    pattern: /
+    defaults: { _controller: cuppLiqdBundle:default:index }
+cuppLiqdBundle_homepage_index:
+    pattern: /index
+    defaults: { _controller: cuppLiqdBundle:default:index }
+cuppLiqdBundle_register:
+    pattern: /register
+    defaults: { _controller: cuppLiqdBundle:users:register }
+cuppLiqdBundle_connection:
+    pattern: /connection
+    defaults: { _controller: cuppLiqdBundle:users:register }
+cuppLiqdBundle_choose_language:
+    pattern: /choose_language/{lang}
+    defaults: { _controller: cuppLiqdBundle:default:chooseLanguage }
+cuppLiqdBundle_profile:
+    pattern: /profile
+    defaults: { _controller: cuppLiqdBundle:users:profile }
+cuppLiqdBundle_logout:
+    pattern: /logout
+    defaults: { _controller: cuppLiqdBundle:users:logout }
+cuppLiqdBundle_admin:
+    pattern: /admin
+    defaults: { _controller: cuppLiqdBundle:admin:index }
+cuppLiqdBundle_admin_blocks:
+    pattern: /admin/blocks
+    defaults: { _controller: cuppLiqdBundle:blocks:admin }
+cuppLiqdBundle_admin_blocks_delete:
+    pattern: /admin/blocks/delete/{id}
+    defaults: { _controller: cuppLiqdBundle:blocks:delete }
+cuppLiqdBundle_admin_blocks_edit:
+    pattern: /admin/blocks/edit/{id}
+    defaults: { _controller: cuppLiqdBundle:blocks:edit }
+cuppLiqdBundle_admin_blocks_add:
+    pattern: /admin/blocks/add
+    defaults: { _controller: cuppLiqdBundle:blocks:edit }
+cuppLiqdBundle_admin_users:
+    pattern: /admin/users
+    defaults: { _controller: cuppLiqdBundle:users:admin }
+cuppLiqdBundle_admin_users_delete:
+    pattern: /admin/users/delete/{id}
+    defaults: { _controller: cuppLiqdBundle:users:delete }
+cuppLiqdBundle_admin_users_edit:
+    pattern: /admin/users/edit/{id}
+    defaults: { _controller: cuppLiqdBundle:users:edit }
+cuppLiqdBundle_admin_users_add:
+    pattern: /admin/users/add
+    defaults: { _controller: cuppLiqdBundle:users:edit }
+cuppLiqdBundle_admin_categories:
+    pattern: /admin/categories
+    defaults: { _controller: cuppLiqdBundle:categories:admin }
+cuppLiqdBundle_admin_categories_delete:
+    pattern: /admin/categories/delete/{id}
+    defaults: { _controller: cuppLiqdBundle:categories:delete }
+cuppLiqdBundle_admin_categories_edit:
+    pattern: /admin/categories/edit/{id}
+    defaults: { _controller: cuppLiqdBundle:categories:edit }
+cuppLiqdBundle_admin_categories_add:
+    pattern: /admin/categories/add
+    defaults: { _controller: cuppLiqdBundle:categories:edit }
+cuppLiqdBundle_instances:
+    pattern: /instances
+    defaults: { _controller: cuppLiqdBundle:instances:categories }
+cuppLiqdBundle_instances_list:
+    pattern: /instances/{catId}.{catName}/list
+    defaults: { _controller: cuppLiqdBundle:instances:list }
+cuppLiqdBundle_instances_display:
+    pattern: /instances/{catId}.{catName}/display/{instancesCode}
+    defaults: { _controller: cuppLiqdBundle:instances:display}
+cuppLiqdBundle_instances_add:
+    pattern: /instances/{catId}.{catName}/add
+    defaults: { _controller: cuppLiqdBundle:instances:edit }
+cuppLiqdBundle_instances_delete:
+    pattern: /instances/{instancesId}/delete
+    defaults: { _controller: cuppLiqdBundle:instances:delete }
+cuppLiqdBundle_instances_edit:
+    pattern: /instances/{catId}.{catName}/{instancesId}/edit
+    defaults: { _controller: cuppLiqdBundle:instances:edit }
+cuppLiqdBundle_blog:
+    pattern: /blog
+    defaults: {_controller: cuppLiqdBundle:blocks:view }
+cuppLiqdBundle_page:
+    pattern: /page/{page}
+    defaults: { _controller: cuppLiqdBundle:blocks:view }
+cuppLiqdBundle_proposals_display:
+    pattern: /instances/{catId}.{catName}/{instancesCode}/proposals/display/{proposalsId}.{proposalsCode}
+    defaults: { _controller: cuppLiqdBundle:proposals:display}
+cuppLiqdBundle_proposals_add:
+    pattern: /instances/{catId}.{catName}/{instancesId}.{instancesCode}/proposals/add
+    defaults: { _controller: cuppLiqdBundle:proposals:edit }
+cuppLiqdBundle_proposals_comment_delete:
+    pattern: /instances/proposals/comment/{commId}/delete
+    defaults: { _controller: cuppLiqdBundle:proposals:deleteComm }
+cuppLiqdBundle_proposals_implementations_delete:
+    pattern: /instances/proposals/implementations/{impId}/delete
+    defaults: { _controller: cuppLiqdBundle:proposals:deleteImplementations }
+cuppLiqdBundle_proposals_implementations_votesFor:
+    pattern: /instances/proposals/implementations/{implementationsId}/votesFor
+    defaults: { _controller: cuppLiqdBundle:proposals:votesFor }
+cuppLiqdBundle_proposals_implementations_votesAgainst:
+    pattern: /instances/proposals/implementations/{implementationsId}/votesAgainst
+    defaults: { _controller: cuppLiqdBundle:proposals:votesAgainst }
+cuppLiqdBundle_instances_list_proposals:
+    pattern: /instances/{catId}.{catName}/display/{instancesId}.{instancesCode}/proposals/list
+    defaults: { _controller: cuppLiqdBundle:proposals:list}
+cuppLiqdBundle_instances_list_users:
+    pattern: /instances/{catId}.{catName}/display/{instancesId}.{instancesCode}/users/list
+    defaults: { _controller: cuppLiqdBundle:instances:listusers}
+

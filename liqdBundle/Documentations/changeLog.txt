@@ -1,0 +1,42 @@
+Versions
+==========================
+
+
+V0.1
+----------------------
+* Admin (blocs, utilisateurs, catégories)
+* Page d'accueil
+* Page de catégories 
+* Identification, inscription
+* Liste des catégories
+
+
+
+V0.2
+----------------------
+* Gestion des blocs
+* Mise en place d'un wysiwyg
+* Sécurisation du formulaire d'enregistrement et d'identification
+* Correction de bugs mineurs
+
+
+V0.3
+----------------------
+* Admin (instances, propositions, commentaires)
+* Gestion des instances
+* Gestion des propositions
+* Gestion des commentaires sur les instances et les propositions
+* Sécurisation des requêtes
+* Sécurisation et correction de bugs
+* Evolution de la base de données pour prendre en compte les relations
+* Remplacement des requêtes SQL pour le queryBuilder de Symfony2
+* Mise à jour du bootstrap CSS
+* Intégration d'icones avec les boutons
+
+
+V0.4
+----------------------
+* Mise à jour des textes "A propos de nous..." et "Vous avez dit démocratie liquide ?"
+* Mise à jour du guide d'utilisation, termes & conditions.
+* Mise à jour des flux sociaux sur la page d'accueil.
+* 

@@ -1,0 +1,74 @@
+{% extends 'cuppLiqdBundle:common:layout.html.twig' %}
+
+{% block css%}
+{% endblock %}
+
+{% block content %}
+<div class="container">
+<br /><br /><br />
+	<span class="navHeader">
+		<a href="{{ path('cuppLiqdBundle_homepage')}}">liqd</a> &raquo; 
+		<a href="{{ path('cuppLiqdBundle_profile')}}">{{ 'profile' | trans }}</a> 
+	</span>
+	<br /><br />
+	
+	<div class="row">
+		<div class="span16">
+		{% if app.session.get('currentUser').name is defined %}				
+		<h2>{{ 'profile' | trans }}</h2>
+		{% if messageProfile != "" %}
+			<div class="alert-message warning">{{ messageProfile | trans}}</div>
+		{% endif %}
+		
+		<form action="{{ path('cuppLiqdBundle_profile')}}" method="post" {{ form_enctype(formRegister) }}>
+		<table>				
+			<tr>
+				<td>{{form_label(formRegister.alias)}}</td>
+				<td>{{form_widget(formRegister.alias, { 'attr': {'readonly': 'readonly'} })}}</td>
+			</tr>
+			<tr>
+				<td>{{form_label(formRegister.name)}}</td>
+				<td>{{form_widget(formRegister.name)}}</td>
+			</tr>
+			<tr>
+				<td>{{form_label(formRegister.surname)}}</td>
+				<td>{{form_widget(formRegister.surname)}}</td>
+			</tr>
+			<tr>
+				<td>{{form_label(formRegister.img)}}</td>
+				<td>{{form_widget(formRegister.img)}}</td>
+			</tr>
+			<tr>
+				<td>{{form_label(formRegister.password)}}</td>
+				<td>{{form_widget(formRegister.password)}}</td>
+			</tr>
+			<tr>
+				<td>{{form_label(formRegister.email)}}</td>
+				<td>{{form_widget(formRegister.email)}}</td>
+			</tr>
+			<tr>
+				<td>{{form_label(formRegister.lang)}}</td>
+				<td>{{form_widget(formRegister.lang)}}</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+				{{form_rest(formRegister) }}
+				<input type="hidden" name="hiddenRegister" value="true" />
+				<input type="submit" /></td>
+			</tr>
+		</table>
+		</form>
+		{% else %}
+		<table>
+		<tr>
+			<td>
+				<img src="{{ asset('bundles/cuppLiqd/images/warning.jpg') }}" alt="warning" title="warning" />
+				{{ "profile.error.session"| trans( {'%url%' : path('cuppLiqdBundle_register') })}}
+			</td>
+		</tr>
+		</table>
+		{% endif %}
+		</div>
+	</div>
+</div>
+{% endblock %}

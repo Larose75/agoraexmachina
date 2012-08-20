@@ -1,0 +1,122 @@
+body
+{
+	font-family	: "lucida grande", "Verdana", arial, sans-serif; 
+	font-size	: 10pt;
+	padding		: 0px;
+	margin		: 0px;
+	border		: 0px;
+	color		: #013145;
+}
+
+table tr td
+{
+	font-family	: "lucida grande", "Verdana", arial, sans-serif; 
+	font-size	: 10pt;
+	color	 : #706E6B;
+}
+
+a
+{
+	text-decoration	: none;
+}
+
+
+a:hover
+{
+	text-decoration : underline;
+}
+
+
+
+#content
+{
+	padding			: 5px 0px 0px 10%;	
+	position		: relative;
+}
+
+
+.divYellow
+{
+	border				: 1px solid #E7E5A3;
+	background-color	: #FDFBC0;
+	color				: #013145;
+	padding				: 10px;
+	border-radius		: 10px;
+	
+}
+
+h2
+{
+	color	: #000;
+}
+
+h2 img, h3 img, h4 img
+{
+	padding : 5px;
+}
+
+
+hr
+{
+	border		: none 0;
+	border-top	: 1px dashed #AEAEAE;/*the border*/
+	height		: 1px;	
+}
+
+
+ul.ulButtonList, ul.ulButtonInline
+{
+	list-style-type	: none;
+	padding-left	: 0px;
+}
+
+ul.ulButtonInline li
+{
+	float	: left;
+	margin	: 10px 0px 10px 0px;
+}
+ul.ulButtonList li
+{
+	margin				: 10px 0px 10px 0px;
+}
+
+ul.ulButtonList  li a, ul.ulButtonInline li a
+{
+	text-decoration		: none;
+	color				: #FFF;	
+	border-radius		: 5px;
+	border				: 1px solid #AEAEAE;
+	padding 			: 2px;	
+}
+
+ul.ulButtonList  li a:hover, ul.ulButtonInline  li a:hover
+{
+	text-decoration		: none;
+	color		: #FFF;
+	font-weight	: bold;
+	overflow	: hidden;	
+}
+
+input
+{
+	color			: #6785A6;
+}
+
+input[type="submit"], input[type="button"]
+{
+	text-decoration		: none;
+	color				: #FFF;	
+	border-radius		: 5px;
+	border				: 1px solid #AEAEAE;
+	padding 			: 2px;	
+	background-color	: #6785a6;
+	font-weight			: bold;
+	
+}
+
+input[type="submit"]:hover, input[type="button"]:hover
+{
+	background-color	: #888888;
+	cursor				: pointer;
+}
+

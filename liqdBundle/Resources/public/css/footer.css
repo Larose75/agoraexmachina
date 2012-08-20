@@ -1,0 +1,21 @@
+#footer
+{
+	margin-top			: 50px;
+	border-top			: 1px solid #AEAEAE;
+	background-image	: url('../images/background_footer.png');
+	background-repeat	: repeat-x;
+	padding				: 5px 0px 50px 10%;
+}
+
+
+#footer table
+{
+	width	: 1000px;
+}
+
+#footer table ul
+{
+	padding 		: 0px;
+	margin			: 0px;
+	list-style-type	: none;	
+}
